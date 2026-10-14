@@ -157,7 +157,7 @@ def main():
         test_size=0.2
 
         data_path="https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv"
-
+      
         
         df=load_data(data_url=data_path)
 
