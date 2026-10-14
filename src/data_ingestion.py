@@ -70,8 +70,7 @@ def save_data(train_data:pd.DataFrame,test_data:pd.DataFrame,data_path:str)->Non
 def main():
     try:
         test_size=0.2
-        data_path="C:/Users/JAITARANATH/Desktop/MLOPS/PipeLine/MLOPS-Complete-ML-Pipeline/experiments/spam.csv"
-       # data_path="https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv"
+        data_path="https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv"
         df=load_data(data_path)
         final_df=preprocess_data(df)
         train_data,test_data=train_test_split(final_df,test_size=test_size,random_state=2)
