@@ -149,7 +149,6 @@ def main():
     try:
 
         max_features = 50
-
  
 
         train_data=load_data('./data/interim/train_processed_data.csv')
@@ -164,7 +163,7 @@ def main():
 
         save_data(train_df,os.path.join("./data","processed","train_tfidf.csv"))
 
-        save_data(test_data,os.path.join("./data","processed","test_tfidf.csv"))
+        save_data(test_df,os.path.join("./data","processed","test_tfidf.csv"))
 
  
 
